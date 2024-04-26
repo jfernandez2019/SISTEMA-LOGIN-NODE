@@ -68,23 +68,25 @@ export const Login = () => {
     }
 
     return (
-        <div className="container">
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
-                <div className="form-control">
-                    <input type="text" required value={email} onChange={(e) => setemail(e.target.value)} />
-                    <label>Email</label>
-                </div>
+        <div className='body-login'>
+            <div className="container-login">
+                <h1>Login</h1>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-control-login">
+                        <input type="text" required value={email} onChange={(e) => setemail(e.target.value)} />
+                        <label>Email</label>
+                    </div>
 
-                <div className="form-control">
-                    <input type="password" required value={password} onChange={(e) => setpassword(e.target.value)} />
-                    <label>Password</label>
-                </div>
+                    <div className="form-control-login">
+                        <input type="password" required value={password} onChange={(e) => setpassword(e.target.value)} />
+                        <label>Password</label>
+                    </div>
 
-                <button type="submit" className="btn">INGRESAR</button>
+                    <button type="submit" className="btn">INGRESAR</button>
 
-                <p className="text">No tienes una cuenta? Registrar </p>
-            </form>
+                    <p className="text">No tienes una cuenta? Registrar </p>
+                </form>
+            </div>
         </div>
     )
 }

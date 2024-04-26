@@ -1,0 +1,77 @@
+/* movieStyle.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.movie-container {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho máximo del contenedor de cada película */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.movie-container:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  .movie-container {
+      width: calc(50% - 40px); /* Ajusta para 2 columnas en vistas más anchas */
+  }
+}
+
+@media (min-width: 900px) {
+  .movie-container {
+      width: calc(33.333% - 40px); /* Ajusta para 3 columnas en vistas aún más anchas */
+  }
+}
+
+@media (min-width: 900px) {
+  .movie-container {
+      width: calc(25% - 40px); /* Ajusta para 3 columnas en vistas aún más anchas */
+  }
+}

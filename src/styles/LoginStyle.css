@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: steelblue;
+}
+.body-login {
+  
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -17,18 +20,18 @@ body {
   margin: 0;
 }
 
-.container {
+.container-login {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 40px;
   border-radius: 5px;
 }
 
-.container h1 {
+.container-login h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.container a {
+.container-login a {
   text-decoration: none;
   color: lightblue;
 }
@@ -57,13 +60,13 @@ body {
   margin-top: 30px;
 }
 
-.form-control {
+.form-control-login {
   position: relative;
   margin: 20px 0 40px;
   width: 300px;
 }
 
-.form-control input {
+.form-control-login input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
@@ -76,28 +79,28 @@ body {
   z-index: 100;
 }
 
-.form-control input:focus,
-.form-control input:valid {
+.form-control-login input:focus,
+.form-control-login input:valid {
   outline: 0;
   border-bottom-color: lightblue;
 }
 
-.form-control label {
+.form-control-login label {
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
 }
 
-.form-control label span {
+.form-control-login label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus + label span,
-.form-control input:valid + label span {
+.form-control-login input:focus + label span,
+.form-control-login input:valid + label span {
   color: lightblue;
   transform: translateY(-30px);
 }

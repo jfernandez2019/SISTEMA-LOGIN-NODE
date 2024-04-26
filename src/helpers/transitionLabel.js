@@ -1,5 +1,5 @@
 export const transitionLabel = () => {
-    const labels = document.querySelectorAll('.form-control label')
+    const labels = document.querySelectorAll('.form-control-login label')
 
     labels.forEach(label => {
         label.innerHTML = label.innerText
